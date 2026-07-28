@@ -1,0 +1,220 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Recolive | Próximamente</title>
+
+  <style>
+    :root {
+      --primary: #13ec6d;
+      --foreground: #171717;
+      --muted: #6b7280;
+      --background: #f8faf9;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--foreground);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar */
+    header {
+      width: 100%;
+      padding: 24px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--foreground);
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    /* Contenido principal */
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    .construction-container {
+      width: 100%;
+      max-width: 850px;
+      text-align: center;
+    }
+
+    /* Icono */
+    .icon {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 30px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin-bottom: 24px;
+    }
+
+    h1 span {
+      color: var(--primary);
+    }
+
+    p {
+      max-width: 650px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      line-height: 1.7;
+    }
+
+    /* Barra de progreso */
+    .progress-container {
+      max-width: 500px;
+      margin: 40px auto 0;
+    }
+
+    .progress-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 10px;
+      background: #e5e7eb;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress {
+      width: 70%;
+      height: 100%;
+      background: var(--primary);
+      border-radius: 999px;
+    }
+
+    /* Footer */
+    footer {
+      padding: 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header {
+        padding: 20px;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+      }
+
+      main {
+        padding: 40px 20px;
+      }
+
+      .icon {
+        width: 75px;
+        height: 75px;
+        font-size: 34px;
+        margin-bottom: 25px;
+      }
+
+      h1 {
+        letter-spacing: -1px;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .progress-container {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="#" class="logo">
+      Reco<span>live</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="construction-container">
+
+      <div class="icon">
+        🛠️
+      </div>
+
+      <h1>
+        Estamos <span>construyendo</span> algo increíble
+      </h1>
+
+      <p>
+        Nuestra plataforma está en construcción. Muy pronto podrás
+        conectar con recolectores, reciclar tus materiales y contribuir
+        a un futuro más sostenible.
+      </p>
+
+      <div class="progress-container">
+        <div class="progress-info">
+          <span>Construyendo nuestra plataforma</span>
+          <span>70%</span>
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Recolive. Recicla, ayuda al planeta.
+  </footer>
+
+</body>
+</html>
+```
